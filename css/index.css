@@ -192,11 +192,14 @@ table {
 }
 .introHeader button {
   background-color: grey;
-  text-decoration: none;
   color: white;
   margin: 10px;
   padding: 10px;
   width: 150px;
+}
+.introHeader button a {
+  text-decoration: none;
+  color: white;
 }
 .introHeader button:hover {
   color: purple;
@@ -353,4 +356,75 @@ footer p {
 }
 .contactHeader .contactDescription p {
   padding: 10px;
+}
+#three {
+  width: 70%;
+  margin: 5%;
+}
+#three h2 {
+  font-family: 'Satisfy', cursive;
+  font-weight: bold;
+  padding-bottom: 10px;
+  font-size: 20px;
+}
+#three p {
+  padding-bottom: 20px;
+}
+#three #name {
+  width: 100%;
+}
+#three #email {
+  width: 100%;
+}
+#three #message {
+  width: 100%;
+}
+#three .actions {
+  padding: 10px;
+  margin-left: -10px;
+  padding-bottom: 20px;
+}
+#three h3 {
+  font-weight: bold;
+  font-size: 20px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+#three .labeled-icons {
+  font-family: 'Dosis', sans-serif;
+  text-align: justify;
+  font-size: 100%;
+}
+/* CONTACT MOBILE MEDIA QUERIE */
+@media screen and (max-width: 500px) {
+  .Contactnavigation nav {
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 2px;
+    margin-left: 235px;
+  }
+  .contactHeader img {
+    margin-left: 140px;
+  }
+  .contactHeader {
+    width: 90%;
+    height: 55%;
+    padding: 40px 20px;
+    margin: 0 5%;
+    background-color: lightgrey;
+  }
+  .contactHeader h1,
+  h2,
+  p {
+    text-align: center;
+  }
+  #three h2 {
+    margin-left: 100px;
+  }
+  #three p {
+    margin-left: 100px;
+  }
 }
