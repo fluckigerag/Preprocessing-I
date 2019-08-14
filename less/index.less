@@ -47,14 +47,15 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
 /* VARIABLES */
 @headerFont: 'Satisfy', cursive;
+
 /* MIX-INS */
 .bodyFont() {
 	font-family: 'Dosis', sans-serif;
 	text-align: justify;
-	font-size: 62.5%;
-	line-height: 1.5px;
+	font-size: 100%;
 } 
 
 /* Set every element's box-sizing to border-box */
@@ -69,7 +70,7 @@ html, body {
 h1, h3{
 	font-family: @headerFont;
 }
-p {
+p, h2, table {
 	.bodyFont();
 }
 
@@ -82,33 +83,104 @@ p {
 	padding-bottom: 10px;
 	margin: 2px;
 	margin-left: 350px;
-}
-nav a{
-	text-decoration: none;
-	color: slategrey;
-	font-family: @bodyFont;
-	font-weight: 900;
-}
-nav a:hover {
-	color: purple;
+	a{
+		text-decoration: none;
+		color: slategrey;
+		font-family: .bodyFont();
+		font-weight: 900;
+	}
+	a:hover {
+		color: purple;
+	}
 }
 
 /* introHeader */
 .introHeader {
 	width: 70%;
-	height: 50%;
+	height: 55%;
 	padding: 40px 20px;
 	margin: 0 5%;
 	background-color: lightgrey;
+	img {
+		width: 30%;
+	}
+	h1 {
+		font-size: 50px;
+		padding: 10px;
+	} 
+	h2 {
+		font-weight: bold;
+		padding: 10px;
+	}
+	.description p{
+		padding: 10px;	
+	}
+	button{
+		background-color: grey;
+		color: white;
+		margin: 10px;
+		padding: 10px;
+		width: 150px;
+	}
 }
-img {
-	width: 30%;
+
+/* middleSection */
+.middleSection {
+	width: 70%;
+	margin: 5%;
+	display: flex;
+	justify-content: space-between;
+	h3 {
+		font-weight: bold;
+		font-size: 20px;
+		padding-bottom: 10px;
+	}
+	.listen {
+		width: 70%;
+	}
+	.stuffTable {
+		width: 25%;
+	}
+	.stuffTable table, th, td {
+		border: 1px solid grey;
+		padding: 5px;
+		border-collapse: collapse;
+	}
 }
-h1 {
-	font-size: 50px;
-	padding: 10px;
-} 
-button{
+
+/* History */
+.history {
+	padding: 5px;
+	margin: 5%;
+	h3 {
+		font-weight: bold;
+		font-size: 20px;
+		padding-bottom: 10px;
+	}
+	table, th, td {
+		border: 1px solid grey;
+		padding: 5px;
+		border-collapse: collapse;
+		width: 77%;
+	}
+	th, td {
+		width: 25%;
+		text-align: center;
+	}
+	th{
+		background-color: lightgrey;
+	}
+}
+
+
+/* Footer */
+footer {
 	background-color: grey;
-	color: white;
+	padding: 20px;
+	margin: 5%;
+	width: 70%;
+	p{
+		text-align: center;
+		color: white;
+	}
 }

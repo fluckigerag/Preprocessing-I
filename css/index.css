@@ -127,6 +127,7 @@ table {
   border-spacing: 0;
 }
 /* VARIABLES */
+/* MIX-INS */
 /* Set every element's box-sizing to border-box */
 * {
   box-sizing: border-box;
@@ -141,9 +142,14 @@ h1,
 h3 {
   font-family: 'Satisfy', cursive;
 }
-p {
+p,
+h2,
+table {
   font-family: 'Dosis', sans-serif;
+  text-align: justify;
+  font-size: 100%;
 }
+/* navigation */
 .navigation nav {
   width: 40%;
   display: flex;
@@ -153,26 +159,103 @@ p {
   margin: 2px;
   margin-left: 350px;
 }
-nav a {
+.navigation nav a {
   text-decoration: none;
   color: slategrey;
-  font-family: 'Dosis', sans-serif;
+  font-family: [object Object],[object Object],[object Object];
   font-weight: 900;
 }
-nav a:hover {
+.navigation nav a:hover {
   color: purple;
 }
+/* introHeader */
 .introHeader {
   width: 70%;
-  height: 50%;
+  height: 55%;
   padding: 40px 20px;
   margin: 0 5%;
   background-color: lightgrey;
 }
-img {
+.introHeader img {
   width: 30%;
 }
-h1 {
+.introHeader h1 {
   font-size: 50px;
   padding: 10px;
+}
+.introHeader h2 {
+  font-weight: bold;
+  padding: 10px;
+}
+.introHeader .description p {
+  padding: 10px;
+}
+.introHeader button {
+  background-color: grey;
+  color: white;
+  margin: 10px;
+  padding: 10px;
+  width: 150px;
+}
+/* middleSection */
+.middleSection {
+  width: 70%;
+  margin: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+.middleSection h3 {
+  font-weight: bold;
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+.middleSection .listen {
+  width: 70%;
+}
+.middleSection .stuffTable {
+  width: 25%;
+}
+.middleSection .stuffTable table,
+.middleSection th,
+.middleSection td {
+  border: 1px solid grey;
+  padding: 5px;
+  border-collapse: collapse;
+}
+/* History */
+.history {
+  padding: 5px;
+  margin: 5%;
+}
+.history h3 {
+  font-weight: bold;
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+.history table,
+.history th,
+.history td {
+  border: 1px solid grey;
+  padding: 5px;
+  border-collapse: collapse;
+  width: 77%;
+}
+.history th,
+.history td {
+  width: 25%;
+  text-align: center;
+}
+.history th {
+  background-color: lightgrey;
+}
+/* Footer */
+footer {
+  background-color: grey;
+  padding: 20px;
+  margin: 5%;
+  width: 70%;
+}
+footer p {
+  text-align: center;
+  color: white;
 }
