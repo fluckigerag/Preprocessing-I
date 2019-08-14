@@ -192,10 +192,14 @@ table {
 }
 .introHeader button {
   background-color: grey;
+  text-decoration: none;
   color: white;
   margin: 10px;
   padding: 10px;
   width: 150px;
+}
+.introHeader button:hover {
+  color: purple;
 }
 /* middleSection */
 .middleSection {
@@ -258,4 +262,95 @@ footer {
 footer p {
   text-align: center;
   color: white;
+}
+/* MOBILE MEDIA QUERIE */
+@media screen and (max-width: 500px) {
+  .navigation nav {
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 2px;
+    margin-left: 235px;
+  }
+  .introHeader img {
+    margin-left: 140px;
+  }
+  .introHeader {
+    width: 90%;
+    height: 65%;
+    padding: 40px 20px;
+    margin: 0 5%;
+    background-color: lightgrey;
+  }
+  .introHeader h1,
+  h2,
+  p {
+    text-align: center;
+  }
+  .introHeader button {
+    margin-left: 125px;
+  }
+  .middleSection {
+    width: 90%;
+  }
+  .middleSection p {
+    text-align: justify;
+  }
+  .listen {
+    width: 70%;
+  }
+  .stuffTable {
+    width: 25%;
+    margin-top: -2%;
+  }
+  .history table,
+  th,
+  td {
+    width: 100%;
+  }
+  footer {
+    width: 90%;
+  }
+}
+/* contact screen */
+.Contactnavigation nav {
+  width: 40%;
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 2px;
+  margin-left: 350px;
+}
+.Contactnavigation nav a {
+  text-decoration: none;
+  color: slategrey;
+  font-family: [object Object],[object Object],[object Object];
+  font-weight: 900;
+}
+.Contactnavigation nav a:hover {
+  color: purple;
+}
+.contactHeader {
+  width: 70%;
+  height: 50%;
+  padding: 40px 20px;
+  margin: 0 5%;
+  background-color: lightgrey;
+}
+.contactHeader img {
+  width: 30%;
+}
+.contactHeader h1 {
+  font-size: 50px;
+  padding: 10px;
+}
+.contactHeader h2 {
+  font-weight: bold;
+  padding: 10px;
+}
+.contactHeader .contactDescription p {
+  padding: 10px;
 }
