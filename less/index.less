@@ -48,12 +48,309 @@ table {
 	border-spacing: 0;
 }
 
+/* VARIABLES */
+@headerFont: 'Satisfy', cursive;
+
+h3{
+	font-family: @headerFont;
+}
+
+/* MIX-INS */
+.bodyFont {
+	font-family: 'Dosis', sans-serif;
+	text-align: justify;
+	font-size: 100%;
+}
+.h3 {
+	font-weight: bold;
+	font-size: 20px;
+	padding-bottom: 10px;
+}
+
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
+	max-width: 900px;
+	margin: auto;
 }
-
 html, body {
-    height: 100%;
+	height: 100%;
+}
+h1, h3{
+	font-family: @headerFont;
+}
+p, h2, table {
+	.bodyFont();
 }
 
+/* navigation */
+.navigation nav{
+	width: 40%;
+	display: flex;
+	justify-content: space-evenly;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin: 2px;
+	margin-left: 350px;
+	a{
+		text-decoration: none;
+		color: slategrey;
+		.bodyFont();
+		font-weight: 900;
+	}
+	a:hover {
+		color: purple;
+	}
+}
+
+/* introHeader */
+.introHeader {
+	width: 70%;
+	height: 55%;
+	padding: 40px 20px;
+	margin: 0 5%;
+	background-color: lightgrey;
+	img {
+		width: 30%;
+	}
+	h1 {
+		font-size: 50px;
+		padding: 10px;
+	} 
+	h2 {
+		font-weight: bold;
+		padding: 10px;
+	}
+	.description p{
+		padding: 10px;	
+	}
+	button {
+		background-color: grey;
+		color: white;
+		margin: 10px;
+		padding: 10px;
+		width: 150px;
+		a {
+			text-decoration: none;
+			color: white;
+		}
+	}
+	button:hover {
+		color: purple;
+	}
+}
+
+/* middleSection */
+.middleSection {
+	width: 70%;
+	margin: 5%;
+	display: flex;
+	justify-content: space-between;
+	h3 {
+		.h3();
+	}
+	.listen {
+		width: 70%;
+	}
+	.stuffTable {
+		width: 25%;
+	}
+	.stuffTable table, th, td {
+		border: 1px solid grey;
+		padding: 5px;
+		border-collapse: collapse;
+	}
+}
+
+/* History */
+.history {
+	padding: 5px;
+	margin: 5%;
+	h3 {
+		.h3();
+	}
+	table, th, td {
+		border: 1px solid grey;
+		padding: 5px;
+		border-collapse: collapse;
+		width: 77%;
+	}
+	th, td {
+		width: 25%;
+		text-align: center;
+	}
+	th{
+		background-color: lightgrey;
+	}
+}
+
+
+/* Footer */
+footer {
+	background-color: grey;
+	padding: 20px;
+	margin: 5%;
+	width: 70%;
+	p{
+		text-align: center;
+		color: white;
+	}
+}
+
+/* MOBILE MEDIA QUERIE */
+@media screen and (max-width: 500px) {
+	.navigation nav{
+		width: 50%;
+		display: flex;
+		justify-content: space-evenly;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		margin: 2px;
+		margin-left: 235px;
+	}
+	.introHeader img{
+		margin-left: 140px;
+	}
+	.introHeader {
+		width: 90%;
+		height: 65%;
+		padding: 40px 20px;
+		margin: 0 5%;
+		background-color: lightgrey;
+	}
+	.introHeader h1, h2, p{
+		text-align: center;
+	}
+	.introHeader button{
+		margin-left: 125px;
+	}
+	.middleSection {
+		width: 90%;
+	}
+	.middleSection p{
+		text-align: justify;
+	}
+	.listen {
+		width: 70%;
+	}
+	.stuffTable {
+		width: 25%;
+		margin-top: -2%;
+	}
+	.history table, th, td {
+		width: 100%;
+	}
+	footer {
+		width: 90%;
+	}
+}
+
+/* contact screen */
+.Contactnavigation nav{
+	width: 40%;
+	display: flex;
+	justify-content: space-evenly;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin: 2px;
+	margin-left: 350px;
+	a{
+		text-decoration: none;
+		color: slategrey;
+		.bodyFont();
+		font-weight: 900;
+	}
+	a:hover {
+		color: purple;
+	}
+}
+
+.contactHeader {
+	width: 70%;
+	height: 50%;
+	padding: 40px 20px;
+	margin: 0 5%;
+	background-color: lightgrey;
+	img {
+		width: 30%;
+	}
+	h1 {
+		font-size: 50px;
+		padding: 10px;
+	} 
+	h2 {
+		font-weight: bold;
+		padding: 10px;
+	}
+	.contactDescription p{
+		padding: 10px;	
+	}
+
+}
+
+#three {
+	width: 70%;
+	margin: 5%;
+	h2 {
+		font-family: @headerFont;
+		font-weight: bold;
+		padding-bottom: 10px;
+		font-size: 20px;
+	}
+	p {
+		padding-bottom: 20px;
+	}
+	#name{
+		width: 100%;
+	}
+	#email{
+		width: 100%;
+	}
+	#message {
+		width: 100%;
+	}
+	.actions{
+		padding: 10px;
+		margin-left: -10px;
+		padding-bottom: 20px;
+	}
+	h3 {
+		.h3();
+		padding-top: 10px;
+	}
+	.labeled-icons {
+		.bodyFont();
+	}
+}
+
+/* CONTACT MOBILE MEDIA QUERIE */
+@media screen and (max-width: 500px) {
+	.Contactnavigation nav{
+		width: 50%;
+		display: flex;
+		justify-content: space-evenly;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		margin: 2px;
+		margin-left: 235px;
+	}
+	.contactHeader img{
+		margin-left: 140px;
+	}
+	.contactHeader {
+		width: 90%;
+		height: 55%;
+		padding: 40px 20px;
+		margin: 0 5%;
+		background-color: lightgrey;
+	}
+	.contactHeader h1, h2, p{
+		text-align: center;
+	}
+	#three h2{
+		margin-left: 100px;
+	}
+	#three p{
+		margin-left: 100px;
+	}	
+}
